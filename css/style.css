@@ -177,8 +177,10 @@ a:link{
   display: inline;
 }
 
-.tech + .tech::before{
-  content: "/ ";
+.tech:hover{
+  color:red;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .portfolio p span{
@@ -308,7 +310,7 @@ label{
 
 #input_text{
   background-color:black;
-  opacity:0.3;
+  opacity:0.6;
   color:white;
 }
 
