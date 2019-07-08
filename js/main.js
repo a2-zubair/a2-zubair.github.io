@@ -1,27 +1,32 @@
 $(document).ready(function(){
     // portfolio navs
     $("#all").on("click", function(){
-        $(".html, .css, .boot, .js, .ps").show();
+        $(".html, .css, .boot, .js, .ps, .ai").show();
     });
 
     $("#html, #css").on("click",function(){
-        $(".ps").hide();
+        $(".ps, .ai").hide();
         $(".html, .css").show();
     });
 
     $("#boot").on("click", function(){
-        $(".ps, .html, .css").hide();
+        $(".ps, .html, .css, .ai").hide();
         $(".boot").show();
     });
 
     $("#js").on("click",function(){
-        $(".ps, .html, .css").hide();
+        $(".ps, .html, .css, .ai").hide();
         $(".js").show();
     });
 
     $("#ps").on("click",function(){
-        $(".html, .css").hide();
+        $(".html, .css, .js, .ai").hide();
         $(".ps").show();
+    });
+
+    $("#ai").on("click",function(){
+        $(".html, .css, .js, .boot, .ps").hide();
+        $(".ai").show();
     });
 
     // date
